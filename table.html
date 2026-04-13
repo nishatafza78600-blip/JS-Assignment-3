@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Backward Counting</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+<script>
+    
+var table = prompt("Enter a number to show its multiplication table:");
+var Length = prompt("Enter length of multiplication table:");
+
+
+var eArray = [];
+
+for (var i = 1; i <= Length; i++) {
+    eArray.push(table * i);
+}
+
+
+ document.writeln("<h3>Multiplication table of " + table + "</h3>");
+ document.writeln("<h3>Length " + Length + "</h3><br>");
+
+for (var j = 0; j < eArray.length; j++) {
+ 
+    document.writeln(table + " x " + (j + 1) + " = " + eArray[j] + "<br>");
+}
+
+</script>
+
+
+</body>
+</html>
